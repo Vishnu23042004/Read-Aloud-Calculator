@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voice Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+   <div class="background">
+     
+    <div class="back" style="rotate: -15deg;">
+        <div>
+          <i>0</i><i>=</i><i>%</i><i>1</i><i>2</i><i>3</i><i>+</i><i>-</i><i>*</i><i>4</i><i>5</i>
+          <i>/</i><i>=</i><i>+</i><i>-</i><i>6</i><i>7</i><i>8</i><i>9</i><i>*</i><i>/</i>
+        </div>
+        <div>
+          <i>/</i><i>=</i><i>+</i><i>-</i><i>*</i><i>/</i><i>=</i><i>%</i><i>4</i><i>5</i><i>6</i><i>7</i>
+          <i>0</i><i>1</i><i>2</i><i>3</i><i>8</i><i>9</i><i>+</i><i>-</i><i>*</i>
+        </div>
+        <div>
+          <i>+</i><i>-</i><i>+</i><i>-</i><i>*</i><i>/</i><i>=</i><i>%</i><i>9</i><i>0</i><i>1</i
+         ><i>2</i><i>3</i><i>*</i><i>/</i><i>=</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i>
+        </div>
+        <div>
+          <i>0</i><i>1</i><i>4</i><i>*</i><i>/</i><i>=</i><i>%</i><i>5</i><i>6</i><i>-</i>
+          <i>+</i><i>*</i><i>7</i><i>8</i><i>9</i><i>/</i><i>=</i><i>+</i><i>-</i><i>2</i><i>3</i>
+        </div>
+        <div>
+          <i>+</i><i>-</i><i>*</i><i>/</i><i>=</i><i>+</i><i>-</i><i>*</i><i>/</i><i>=</i><i>%</i>
+          <i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i>
+        </div>
+        <div>
+          <i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i>
+          <i>+</i><i>-</i><i>*</i><i>/</i><i>=</i><i>+</i><i>-</i><i>*</i><i>/</i><i>=</i><i>%</i>
+        </div>
+        
+    </div>
+
+    <div class="container">
+      <div class="display">
+        <input id="screen" type="text" placeholder="0">
+      </div>
+
+      <div class="btns">
+        <div class="row">
+          <button class="btn" onclick="back()" style="background-color:pink;">CE</button>
+          <button class="btn" onclick="factorial()">x!</button>
+          <button class="btn" onclick="log()">log</button>
+          <button class="btn" onclick="sqrt()">√</button>
+          <button class="btn" onclick="insert('%')">%</button>
+          <button class="btn" onclick="clearAll()" style="background-color: rgb(98, 215, 98);" >AC</button>
+        </div>
+
+        <div class="row">
+          <button class="btn" onclick="asin()">asin</button>
+          <button class="btn" onclick="sin()">sin</button>
+          <button class="btn" onclick="insert('7')">7</button>
+          <button class="btn" onclick="insert('8')">8</button>
+          <button class="btn" onclick="insert('9')">9</button>
+          <button class="btn" onclick="insert('/')">÷</button>
+        </div>
+
+        <div class="row">
+          <button class="btn" onclick="acos()">acos</button>
+          <button class="btn" onclick="cos()">cos</button>
+          <button class="btn" onclick="insert('4')">4</button>
+          <button class="btn" onclick="insert('5')">5</button>
+          <button class="btn" onclick="insert('6')">6</button>
+          <button class="btn" onclick="insert('*')">x</button>
+        </div>
+
+        <div class="row">
+          <button class="btn" onclick="atan()">atan</button>
+          <button class="btn" onclick="tan()">tan</button>
+          <button class="btn" onclick="insert('1')">1</button>
+          <button class="btn" onclick="insert('2')">2</button>
+          <button class="btn" onclick="insert('3')">3</button>
+          <button class="btn" onclick="insert('-')">-</button>
+        </div>
+
+        <div class="row">
+          <button class="btn" onclick="insert('2.71828182846')">e</button>
+          <button class="btn" onclick="insert('3.14159265359')">𝝅</button>
+          <button class="btn" onclick="insert('0')">0</button>
+          <button class="btn" onclick="insert('.')">.</button>
+          <button class="btn" onclick="calculate()" style="background-color: rgb(86, 118, 214);" >=</button>
+          <button class="btn" onclick="insert('+')">+</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+<script src="script.js"></script>
+</body>
+</html>
